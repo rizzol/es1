@@ -19,7 +19,7 @@ setInterval(function() {
     console.log('Temperature:', readout.temperature.toFixed(1)+ 'C');
     //console.log('Humidity:', readout.humidity.toFixed(1)+ '%');
 
-    const data = SON.stringify({
+    const data = JSON.stringify({
         'sensor':'ID1',
         'timestamp': 12345678,
         'temperature':readout.temperature.toFixed(1)
